@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café El Buen Grano | Inicio</title>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #fcf9f5; }
+        
+        /* Estilos del Encabezado y Navegación */
+        header { background: #4a2e1b; color: #fff; padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        header h2 { margin: 0; font-size: 1.5rem; letter-spacing: 2px; }
+        nav ul { list-style: none; padding: 0; margin: 10px 0 0 0; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: #f4e8d3; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #fff; text-decoration: underline; }
+        
+        /* Estructura general de las secciones */
+        main { max-width: 900px; margin: auto; padding: 20px; }
+        section { padding: 40px 0; border-bottom: 1px solid #e0d5c1; }
+        section:last-of-type { border-bottom: none; }
+        h1, h3 { color: #4a2e1b; }
+        
+        /* Sección de Inicio (Hero) */
+        .hero { text-align: center; }
+        .hero img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        /* Estilos de la Tabla del Menú */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid #e0d5c1; padding: 12px 15px; text-align: left; }
+        th { background-color: #4a2e1b; color: white; }
+        tr:nth-child(even) { background-color: #f9f6f0; }
+        
+        /* Estilos del Formulario */
+        form { display: flex; flex-direction: column; gap: 15px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .form-group { display: flex; flex-direction: column; }
+        label { font-weight: bold; color: #4a2e1b; margin-bottom: 5px; }
+        input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        input:focus { outline: none; border-color: #4a2e1b; }
+        button { background: #4a2e1b; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 4px; font-size: 16px; font-weight: bold; transition: background 0.3s; }
+        button:hover { background: #6b4423; }
+        
+        /* Pie de página */
+        footer { background: #222; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>☕ EL BUEN GRANO</h2>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Nuestro Menú</a></li>
+                <li><a href="#reservas">Reservar Mesa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>El mejor café de la ciudad</h1>
+            <p>Disfruta de una experiencia única con granos seleccionados y tostados artesanalmente. Un lugar diseñado para relajarse, leer y compartir.</p>
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800" alt="Taza de café humeante sobre una mesa de madera">
+        </section>
+
+        <section id="menu">
+            <h3>Nuestras Especialidades</h3>
+            <p>Conoce nuestras bebidas preparadas al momento por nuestros baristas profesionales.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bebida</th>
+                        <th>Descripción</th>
+                        <th>Precio (Mediano)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso Clásico</td>
+                        <td>Fuerte, intenso y con una crema perfecta.</td>
+                        <td>$5.000</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino Italiano</td>
+                        <td>Espresso, leche vaporizada y una capa de espuma.</td>
+                        <td>$8.500</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha de la Casa</td>
+                        <td>Café, chocolate amargo artesanal y leche.</td>
+                        <td>$6.000</td>
+                    </tr>
+                    <tr>
+                        <td>Latte Vainilla</td>
+                        <td>Suave y cremoso con un toque de vainilla natural.</td>
+                        <td>$8.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reservas">
+            <h3>Asegura tu mesa</h3>
+            <p>Completa el siguiente formulario para reservar tu espacio en nuestra cafetería.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="juan@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha de la reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Número de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" max="10" placeholder="Ej. 2" required>
+                </div>
+
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café El Buen Grano. Todos los derechos reservados.</p>
+        <p>📍 Calle 63 Av Caracas, Bogotá, Colombia | 🕒 Lun-Sáb: 8:00 AM - 9:00 PM</p>
+    </footer>
+
+</body>
+</html>
