@@ -1,4 +1,8 @@
+
 # ☕ El Buen Café - Sistema de Gestión
+
+https://github.com/user-attachments/assets/02673d69-a8a4-4892-a8c3-4fe8c4dfdc20
+
 
 ¡Bienvenido a **El Buen Café**! Este proyecto es una solución de software diseñada para optimizar los procesos de administración, ventas y control de inventario de una cafetería, enfocándose en la eficiencia operativa y una interfaz amigable para el usuario.
 
